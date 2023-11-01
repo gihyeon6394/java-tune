@@ -150,6 +150,6 @@ public class ServiceLocator {
 
 ```
 
-### 정리
+## 정리
 
 - 최소한 Buisniess Delegate, Session Facade, Data Access Object, Service Locator, Transfer Object 패턴은 적용해야함

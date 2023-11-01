@@ -1,6 +1,9 @@
 plugins {
     id 'java'
+    id 'me.champeau.gradle.jmh' version '0.5.0'
+
 }
+
 
 group = 'org.example'
 version = '1.0-SNAPSHOT'
@@ -12,6 +15,9 @@ repositories {
 dependencies {
     testImplementation platform('org.junit:junit-bom:5.9.1')
     testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation('org.openjdk.jmh:jmh-core:1.35')
+    implementation('org.openjdk.jmh:jmh-generator-annprocess:1.35')
+
 }
 
 test {
