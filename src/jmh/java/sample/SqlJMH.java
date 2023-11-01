@@ -28,4 +28,20 @@ public class SqlJMH {
         // 이하 생략
 
     }
+
+    @Benchmark
+    public void tst2() {
+        StringBuilder strSQL = new StringBuilder();
+        strSQL.append("SELECT * ");
+        strSQL.append("FROM   (SELECT ROWNUM AS RNUM, ");
+        strSQL.append("               A.* ");
+        strSQL.append("        FROM   (SELECT * ");
+        strSQL.append("                FROM   TBL_BOARD ");
+        strSQL.append("                ORDER  BY BOARD_NO DESC) A) ");
+        strSQL.append("WHERE  RNUM BETWEEN ? AND ? ");
+
+
+        // 이하 생략
+
+    }
 }
