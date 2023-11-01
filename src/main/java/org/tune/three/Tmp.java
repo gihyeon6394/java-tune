@@ -2,72 +2,72 @@ package org.tune.three;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import java.util.Arrays;
+import java.util.concurrent.TimeUnit;
 
 public class Tmp {
+    final String aVal = "Karina is Beautiful ";
+    public double nano = 1000000.0;
 
-    @Test
+
     @DisplayName("Stirng")
-    public void test_string() {
-        long[] times = new long[10];
-        final String aVal = "abcde";
-        for (int outLoop = 0; outLoop < 10; outLoop++) {
-            long start = System.nanoTime();
-            String a = new String();
-            for (int i = 0; i < 100000; i++) {
-                a += aVal;
-            }
-            long end = System.nanoTime();
-            times[outLoop] = end - start;
+    @ParameterizedTest
+    @ValueSource(ints = {1000, 10000, 50000, 100000})
+    public void test_string(int innerLoop) {
+
+        long start = System.nanoTime();
+
+
+        String a = new String();
+        for (int j = 0; j < innerLoop; j++) {
+            a += aVal;
         }
-        // average time
-        System.out.println("av : " + Arrays.stream(times).average().getAsDouble());
+        long end = System.nanoTime();
+        double diff = end - start;
+        System.out.println("diff = " + diff);
+        System.out.println("diff = " + diff / 1000000);
     }
 
-    @Test
+
     @DisplayName("StringBuffer")
-    public void test_stringBuffer() throws InterruptedException {
-        Thread.sleep(10000);
-        long[] times = new long[10];
-        final String aVal = "abcde";
-        for (int outLoop = 0; outLoop < 10; outLoop++) {
-            long start = System.nanoTime();
+    @ParameterizedTest
+    @ValueSource(ints = {1000, 10000, 50000, 100000})
+    public void test_stringBuffer(int innerLoop) {
 
-            StringBuffer a = new StringBuffer();
-            for (int i = 0; i < 100000; i++) {
-                a.append(aVal);
-            }
-            long end = System.nanoTime();
-            times[outLoop] = end - start;
+        long start = System.nanoTime();
+
+        StringBuffer a = new StringBuffer();
+        for (int j = 0; j < innerLoop; j++) {
+            a.append(aVal);
         }
 
-        System.out.println("av : " + Arrays.stream(times).average().getAsDouble());
+        long end = System.nanoTime();
+        double diff = end - start;
+        System.out.println("diff = " + diff);
+        System.out.println("diff = " + diff / 1000000);
 
     }
 
-    @Test
+
     @DisplayName("StringBuilder")
-    public void test_stringBuilder() {
-        long[] times = new long[10];
-        final String aVal = "abcde";
-        for (int outLoop = 0; outLoop < 10; outLoop++) {
-            long start = System.nanoTime();
+    @ParameterizedTest
+    @ValueSource(ints = {1000, 10000, 50000, 100000})
+    public void test_stringBuilder(int innerLoop) {
 
-            StringBuilder a = new StringBuilder();
-            for (int i = 0; i < 100000; i++) {
-                a.append(aVal);
-            }
-            long end = System.nanoTime();
-            times[outLoop] = end - start;
+        long start = System.nanoTime();
+
+        StringBuilder a = new StringBuilder();
+        for (int j = 0; j < innerLoop; j++) {
+            a.append(aVal);
         }
-
-        System.out.println("av : " + Arrays.stream(times).average().getAsDouble());
+        long end = System.nanoTime();
+        double diff = end - start;
+        System.out.println("diff = " + diff);
+        System.out.println("diff = " + diff / 1000000);
 
     }
 
-    public void afterJDK5() {
-        String str1 = "super";
-        String str2 = "Aespa" + " is " + str1 + "Best";
-    }
 }
