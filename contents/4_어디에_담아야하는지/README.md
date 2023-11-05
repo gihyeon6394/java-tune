@@ -646,17 +646,17 @@ public class MapGet {
 
 ````
 Benchmark                      Mode  Cnt  Score   Error  Units
-MapGet.getSeqHashMap           avgt    5  3.113 ± 0.484  us/op
-MapGet.getRandomHashMap        avgt    5  2.709 ± 0.311  us/op
-MapGet.getSeqHashTable         avgt    5  2.976 ± 0.055  us/op
-MapGet.getRandomHashTable      avgt    5  2.623 ± 0.040  us/op
-MapGet.getSeqLinkedHashMap     avgt    5  3.023 ± 0.096  us/op
-MapGet.getRandomLinkedHashMap  avgt    5  2.665 ± 0.337  us/op
-MapGet.getSeqTreeMap           avgt    5  3.050 ± 0.424  us/op
-MapGet.getRandomTreeMap        avgt    5  2.736 ± 0.239  us/op
+MapGet.getRandomHashMap        avgt   10  2.676 ± 0.094  us/op
+MapGet.getRandomHashTable      avgt   10  2.652 ± 0.045  us/op
+MapGet.getRandomLinkedHashMap  avgt   10  2.761 ± 0.023  us/op
+MapGet.getRandomTreeMap        avgt   10  2.625 ± 0.020  us/op
+MapGet.getSeqHashMap           avgt   10  2.975 ± 0.028  us/op
+MapGet.getSeqHashTable         avgt   10  3.061 ± 0.027  us/op
+MapGet.getSeqLinkedHashMap     avgt   10  3.018 ± 0.036  us/op
+MapGet.getSeqTreeMap           avgt   10  3.056 ± 0.013  us/op
 ````
 
-- TreeMap이 가장 느림
+- TreeMap이 가장 느림 (??)
 
 ## Collection 관련 클래스의 동기화
 
