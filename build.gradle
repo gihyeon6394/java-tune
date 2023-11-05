@@ -26,4 +26,5 @@ jmh {
     warmupIterations = 1
     fork = 1
     iterations = 10
+    includes = ['MapGet']
 }
