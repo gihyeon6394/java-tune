@@ -9,7 +9,7 @@
 5. [지금까지 사용하던 for 루프를 더 빠르게 할 수 있다고?](contents/5_지금까지_사용하던_for_루프를_더_빠르게_할_수_있다고/README.md)
 6. [static 제대로 한번 써보자](contents/6_static_제대로_한번_써보자/README.md)
 7. [클래스 정보, 어떻게 알아낼 수 있나?](contents/7_클래스_정보_어떻게_알아낼_수_있나/README.md)
-8. synchronized는 제대로 알고 써야 한다
+8. [synchronized는 제대로 알고 써야 한다](contents/8_synchronized는_제대로_알고_써야_한다/README.md)
 9. IO에서 발생하는 병목 현상
 10. 로그는 반드시 필요한 내용만 찍자
 11. JSP와 서블릿, Spring에서 발생할 수 있는 여러 문제점
