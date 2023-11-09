@@ -106,7 +106,7 @@ public class Sleep extends Thread {
 }
 ```
 
-```bash
+```text
 1 seconds waited
 interrupted
 2 seconds waited
@@ -150,7 +150,7 @@ public class InterruptSample {
 
 ```
 
-```bash
+```text
 MAX_VALUE reached!
 isInterrupted: false
 isInterrupted: true
@@ -310,7 +310,7 @@ public class ContributeTest {
 
 ```
 
-```bash
+```text
 기부자4 : 1000
 기부자3 : 1000
 기부자8 : 1000
@@ -347,7 +347,7 @@ public class ContributeTest {
 
 ```
 
-```bash
+```text
 기부자5 : 5216
 기부자1 : 8216
 기부자2 : 3000
@@ -378,7 +378,7 @@ public class Contribution {
 
 ```
 
-```bash
+```text
 기부자5 : 4000
 기부자1 : 2000
 기부자0 : 1000
