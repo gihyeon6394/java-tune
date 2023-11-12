@@ -11,7 +11,7 @@
 7. [클래스 정보, 어떻게 알아낼 수 있나?](contents/7_클래스_정보_어떻게_알아낼_수_있나/README.md)
 8. [synchronized는 제대로 알고 써야 한다](contents/8_synchronized는_제대로_알고_써야_한다/README.md)
 9. [IO에서 발생하는 병목 현상](contents/9_IO에서_발생하는_병목_현상/README.md)
-10. 로그는 반드시 필요한 내용만 찍자
+10. [로그는 반드시 필요한 내용만 찍자](contents/10_로그는_반드시_필요한_내용만_찍자/README.md)
 11. JSP와 서블릿, Spring에서 발생할 수 있는 여러 문제점
 12. DB를 사용하면서 발생 가능한 문제점들
 13. XML과 JSON도 잘 쓰자
