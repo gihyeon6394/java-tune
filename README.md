@@ -12,7 +12,7 @@
 8. [synchronized는 제대로 알고 써야 한다](contents/8_synchronized는_제대로_알고_써야_한다/README.md)
 9. [IO에서 발생하는 병목 현상](contents/9_IO에서_발생하는_병목_현상/README.md)
 10. [로그는 반드시 필요한 내용만 찍자](contents/10_로그는_반드시_필요한_내용만_찍자/README.md)
-11. JSP와 서블릿, Spring에서 발생할 수 있는 여러 문제점
+11. [JSP와 서블릿, Spring에서 발생할 수 있는 여러 문제점](contents/11_JSP와_서블릿_Spring에서_발생할_수_있는_여러_문제점/README.md)
 12. DB를 사용하면서 발생 가능한 문제점들
 13. XML과 JSON도 잘 쓰자
 14. 서버를 어떻게 세팅해야 할까?
